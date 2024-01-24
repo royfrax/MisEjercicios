@@ -24,6 +24,15 @@ const recortarTexto = (cadena ="", longitud = undefined) => (!cadena)
     recortarTexto()
 
 //3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+const cadenaAArreglo = (cadena="", separador = undefined)=>
+(!cadena)
+    ?console.warn("no ingresaste la cadena de texto")
+    :(separador===undefined)
+        ?console.warn("no ingresaste el caracter separador")
+        :console.info(cadena.split(separador));
+
+
+ cadenaAArreglo("Programa una función que repita un texto X veces","0");
 
 //4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
 
